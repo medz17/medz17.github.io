@@ -1,0 +1,11 @@
+{
+  "name": "medz17.github.io",
+  "version": "1.0.0",
+  "description": "Site “mobile first” Ohmyfood qui répertorie les menus de restaurants gastronomiques.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./assets/css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
