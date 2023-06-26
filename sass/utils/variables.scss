@@ -1,0 +1,36 @@
+/// couleur primaire 
+/// @type Color
+$primaire: #9356DC !default;
+
+/// couleur secondaire  
+/// @type Color
+$secondaire: #FF79DA !default;
+
+/// couleur tertiaire 
+/// @type Color
+$tertiaire: #99E2D0 !default;
+
+/// couleur dégradée 
+/// @type Color
+$degrad: linear-gradient(to right bottom, #ff79da, #e76ed9, #ce65d8, #b25dd7, #9356d5);
+
+/// couleur background gris
+/// @type Color
+$grey: #F7F7F7 !default;
+
+/// couleur  gris foncé
+/// @type Color
+$darkgrey: #7E7E7E !default;
+
+/// couleur background blanc
+/// @type Color
+$white: #FFFFFF !default;
+
+/// couleur noir
+/// @type Color
+$black: #000000 !default;
+
+/// couleur vert bouton new
+/// @type Color
+$green: #008766 !default;
+

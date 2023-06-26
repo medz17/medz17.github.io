@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+// 1. Configuration and aninations
+@import
+  'utils/variables',
+  'utils/mixins';
+// 2. Base 
+  @import
+  'base/fonts',
+  'base/typography';
+
+// 3. Layouts sections
+@import
+  'layouts/header',
+  'layouts/body',
+  'layouts/footer';
+
+// 4. Components
+
+
+// 5. Page-specific styles
+@import
+'pages/accueil';
