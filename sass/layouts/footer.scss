@@ -1,0 +1,35 @@
+footer{
+    background-color: #353535;
+    padding: 22px 25px;
+    display: flex;
+    flex-direction: column;
+    .logo_footer{
+        font-size: 18px;
+        line-height: 26px;
+        padding-bottom: 16px;
+        a{
+            text-decoration: none;
+            color: $white;
+        }  
+    }
+    .link_footer{
+        ul{  
+        list-style: none;
+        margin: 0px;
+        margin-block-end: 0px;
+        margin-block-start: 0px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        justify-content: space-around;
+        }
+        li{
+            padding-bottom: 7px;
+        }
+        a{
+            text-decoration: none;
+            color: $white;
+        }   
+    }
+   
+}
