@@ -1,3 +1,26 @@
 @mixin shadow {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
+
+@mixin intro_title {
+    height: 320px;
+    display : flex;
+    flex-direction : column-reverse; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .title{
+        display : flex; 
+        flex-direction : row; 
+        background-color : $grey;
+        border-radius : 30px 50px 0px 0px;
+        justify-content: left;
+        padding-left: 17px ;
+    }
+}
+
+@mixin position_midle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

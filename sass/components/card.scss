@@ -1,0 +1,76 @@
+// Page accueil 
+//// Card restaurants 
+
+.new_button_position{
+    display: flex;
+    flex-direction: row-reverse;
+    
+        .button_new{
+            @include position_midle;
+            color: $green ;
+            margin: 15px;
+            position: absolute;
+            width: 120px;
+            height: 35px;
+            background-color: $tertiaire;
+            border: none;
+            border-radius: 3px; 
+            font-weight: bold;  
+        }
+    }
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px ;
+    @include shadow;
+    min-width: 22%;
+   
+    
+    .cardContent{
+        transition: all 100ms;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            object-fit: cover;
+        }
+    }
+        h3{
+            margin: 0px 0px 15px 0px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        p{
+            margin: 0%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }      
+}
+.heart_position{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 85%;
+    height: 0px;
+   i.heart_empty{
+      margin-top:-120px ;
+      font-size: 25px;
+    }
+    i.heart_hover{
+        font-size: 25px;
+        margin-top:-120px ;
+        width: 0px;
+    }
+    &:hover{
+        i.heart_hover{
+            width: 25px;
+        }
+    }
+}

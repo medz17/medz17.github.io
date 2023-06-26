@@ -4,6 +4,7 @@
 @import
   'utils/variables',
   'utils/mixins';
+
 // 2. Base 
   @import
   'base/fonts',
@@ -16,7 +17,12 @@
   'layouts/footer';
 
 // 4. Components
-
+@import
+'components/card',
+'components/img',
+'components/filter',
+'components/icon',
+'components/button.scss';
 
 // 5. Page-specific styles
 @import

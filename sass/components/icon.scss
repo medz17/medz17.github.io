@@ -1,0 +1,22 @@
+i.heart_hover{ 
+    background: -webkit-gradient(linear, left top, left bottom, from($primaire), to($secondaire));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    position: absolute;
+}
+  
+ i.heart_hover:hover{
+    -webkit-animation:opac 1.5s;
+    animation:opac 1.5s;
+ }
+i.footer_icon{
+    padding-right: 10px ;  
+    font-size: 16px; 
+}
+
+.fa-hands-helping:before {
+    font-size: 12px;
+}
+
+
+
