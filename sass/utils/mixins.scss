@@ -17,6 +17,12 @@
         justify-content: left;
         padding-left: 17px ;
     }
+    i{
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @mixin position_midle {

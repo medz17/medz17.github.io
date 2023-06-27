@@ -74,3 +74,62 @@
         }
     }
 }
+// Page Restaurant
+///// Card menu 
+
+.repas{
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: $white;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    h3{
+        margin: 0px;
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+    p{
+        margin: 0px;
+        padding-left: 13px;
+        padding-bottom: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        
+    }
+    .typeRepas{
+        width: 100%;
+        .typeRepasFoot{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; 
+            padding-right: 15px; 
+        }
+    }
+    .valid{
+        justify-content: center;
+        align-items: center;
+        background-color: $tertiaire;
+        color: $white;
+        width: 0px;
+          
+    }
+    &:hover{
+        .typeRepas{
+            width: 75%;
+        }
+        .valid{
+            width: 25%; 
+            
+            
+            display: flex;
+            i{
+                font-size: 25px;
+            }
+        }
+    }
+}
