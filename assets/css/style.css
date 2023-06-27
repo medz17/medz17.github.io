@@ -449,6 +449,78 @@ i.footer_icon {
   justify-content: center;
 }
 
+.intro_title--LaNoteEnchantee {
+  height: 320px;
+  display: flex;
+  flex-direction: column-reverse;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+.intro_title--LaNoteEnchantee .title {
+  display: flex;
+  flex-direction: row;
+  background-color: #F7F7F7;
+  border-radius: 30px 50px 0px 0px;
+  justify-content: left;
+  padding-left: 17px;
+}
+.intro_title--LaNoteEnchantee i {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro_title--aLaFrancaise {
+  height: 320px;
+  display: flex;
+  flex-direction: column-reverse;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+.intro_title--aLaFrancaise .title {
+  display: flex;
+  flex-direction: row;
+  background-color: #F7F7F7;
+  border-radius: 30px 50px 0px 0px;
+  justify-content: left;
+  padding-left: 17px;
+}
+.intro_title--aLaFrancaise i {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro_title--leDeliceDesSens {
+  height: 320px;
+  display: flex;
+  flex-direction: column-reverse;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+.intro_title--leDeliceDesSens .title {
+  display: flex;
+  flex-direction: row;
+  background-color: #F7F7F7;
+  border-radius: 30px 50px 0px 0px;
+  justify-content: left;
+  padding-left: 17px;
+}
+.intro_title--leDeliceDesSens i {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .title h1 {
   font-size: 23px;
   line-height: 80px;
