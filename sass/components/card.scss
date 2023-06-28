@@ -29,7 +29,6 @@
    
     
     .cardContent{
-        transition: all 100ms;
         padding: 20px;
         display: flex;
         flex-direction: row;
@@ -115,8 +114,7 @@
         align-items: center;
         background-color: $tertiaire;
         color: $white;
-        width: 0px;
-          
+        width: 0px;  
     }
     &:hover{
         .typeRepas{
@@ -124,12 +122,33 @@
         }
         .valid{
             width: 25%; 
-            
-            
             display: flex;
             i{
                 font-size: 25px;
             }
         }
     }
+}
+
+@media all and (min-width: 960px) { 
+    // Page accueil 
+    //// Card restaurants 
+    .heart_position{
+        margin-left: 0;
+        i.heart_empty{
+            margin-left: 80%;
+            font-size: 25px;
+          }
+          i.heart_hover{
+            margin-left: 22.8rem;
+          }
+    }
+    // Page Restaurant
+    ///// Card menu 
+    .repas{
+        width: 100%;
+        min-width: 100px;
+        margin-right: 0px;
+    }
+    
 }

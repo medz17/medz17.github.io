@@ -97,3 +97,27 @@
     justify-content: center;
     background-color: $grey;
 }
+
+@media all and (min-width: 960px) { 
+    .intro_title{
+        height: 300px;
+    }
+    .menu{
+        margin: 0 auto;
+        width: 634px;
+        padding: 0;
+    }
+    .heart_title_position{
+        margin-left: 25px;
+        height: 25px;
+        margin-top: 41px;
+    }
+    .command{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .menu_container{
+        margin: 0 auto;
+        width: 80%;
+    }
+}

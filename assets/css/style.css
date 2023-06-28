@@ -84,6 +84,24 @@ footer .link_footer a {
   color: #FFFFFF;
 }
 
+@media all and (min-width: 960px) {
+  footer {
+    flex-direction: row-reverse;
+  }
+  footer .logo_footer {
+    margin-right: 40px;
+  }
+  footer .link_footer {
+    display: flex;
+    gap: 30px;
+    margin-right: 40px;
+    padding-top: 5px;
+  }
+  footer .link_footer ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
 .new_button_position {
   display: flex;
   flex-direction: row-reverse;
@@ -113,7 +131,6 @@ footer .link_footer a {
   min-width: 22%;
 }
 .card .cardContent {
-  transition: all 100ms;
   padding: 20px;
   display: flex;
   flex-direction: row;
@@ -208,6 +225,23 @@ footer .link_footer a {
   font-size: 25px;
 }
 
+@media all and (min-width: 960px) {
+  .heart_position {
+    margin-left: 0;
+  }
+  .heart_position i.heart_empty {
+    margin-left: 80%;
+    font-size: 25px;
+  }
+  .heart_position i.heart_hover {
+    margin-left: 22.8rem;
+  }
+  .repas {
+    width: 100%;
+    min-width: 100px;
+    margin-right: 0px;
+  }
+}
 img {
   height: 200px;
   width: 100%;
@@ -258,6 +292,17 @@ img {
   color: #9356DC;
 }
 
+@media all and (min-width: 960px) {
+  .filter {
+    width: 25%;
+  }
+  .filter i {
+    margin-left: 3.5%;
+  }
+  .filter .filterContent {
+    margin-left: 15%;
+  }
+}
 i.heart_hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   -webkit-background-clip: text;
@@ -400,6 +445,27 @@ i.footer_icon {
   width: 100%;
 }
 
+@media all and (min-width: 960px) {
+  .fonctionnement {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .fonctionnement h2 {
+    margin-left: 2.5%;
+  }
+  .restaurant_list h2 {
+    margin-left: 10%;
+  }
+  .cards_container {
+    flex-direction: row;
+    margin: 0 auto 50px auto;
+    gap: 50px;
+    max-width: 960px;
+  }
+  .cards_container .card_container {
+    width: 50%;
+  }
+}
 .title_restaurants {
   z-index: 2;
   width: 100%;
@@ -442,7 +508,14 @@ i.footer_icon {
   justify-content: left;
   padding-left: 17px;
 }
-.intro_title--laPaletteDuGout i {
+@media all and (min-width: 960px) {
+  .intro_title--laPaletteDuGout .title {
+    justify-content: center;
+    margin: 0 auto;
+    width: 79%;
+  }
+}
+.intro_title--laPaletteDuGout .title i {
   font-size: 25px;
   display: flex;
   align-items: center;
@@ -466,7 +539,14 @@ i.footer_icon {
   justify-content: left;
   padding-left: 17px;
 }
-.intro_title--LaNoteEnchantee i {
+@media all and (min-width: 960px) {
+  .intro_title--LaNoteEnchantee .title {
+    justify-content: center;
+    margin: 0 auto;
+    width: 79%;
+  }
+}
+.intro_title--LaNoteEnchantee .title i {
   font-size: 25px;
   display: flex;
   align-items: center;
@@ -490,7 +570,14 @@ i.footer_icon {
   justify-content: left;
   padding-left: 17px;
 }
-.intro_title--aLaFrancaise i {
+@media all and (min-width: 960px) {
+  .intro_title--aLaFrancaise .title {
+    justify-content: center;
+    margin: 0 auto;
+    width: 79%;
+  }
+}
+.intro_title--aLaFrancaise .title i {
   font-size: 25px;
   display: flex;
   align-items: center;
@@ -514,7 +601,14 @@ i.footer_icon {
   justify-content: left;
   padding-left: 17px;
 }
-.intro_title--leDeliceDesSens i {
+@media all and (min-width: 960px) {
+  .intro_title--leDeliceDesSens .title {
+    justify-content: center;
+    margin: 0 auto;
+    width: 79%;
+  }
+}
+.intro_title--leDeliceDesSens .title i {
   font-size: 25px;
   display: flex;
   align-items: center;
@@ -580,6 +674,30 @@ i.footer_icon {
   flex-direction: column;
   justify-content: center;
   background-color: #F7F7F7;
+}
+
+@media all and (min-width: 960px) {
+  .intro_title {
+    height: 300px;
+  }
+  .menu {
+    margin: 0 auto;
+    width: 634px;
+    padding: 0;
+  }
+  .heart_title_position {
+    margin-left: 25px;
+    height: 25px;
+    margin-top: 41px;
+  }
+  .command {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .menu_container {
+    margin: 0 auto;
+    width: 80%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

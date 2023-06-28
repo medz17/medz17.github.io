@@ -62,7 +62,27 @@
     .card_container{
        a{
         width: 100%;
+        } 
     } 
+}
+@media all and (min-width: 960px) {
+    .fonctionnement{
+        width: 80%;
+        margin: 0 auto;
+        h2{
+            margin-left: 2.5%;
+        }
+    } 
+    .restaurant_list h2{
+        margin-left: 10%;
     }
-    
+    .cards_container{
+        flex-direction: row;
+        margin: 0 auto 50px auto;
+        gap: 50px;
+        max-width: 960px;
+        .card_container{
+            width: 50%;
+        }
+    }
 }

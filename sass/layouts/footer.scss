@@ -33,3 +33,22 @@ footer{
     }
    
 }
+
+@media all and (min-width: 960px) {
+    footer{
+        flex-direction: row-reverse;
+        .logo_footer{
+            margin-right: 40px;
+        }
+        .link_footer{
+            display: flex;
+            gap: 30px;
+            margin-right: 40px; 
+            padding-top: 5px;
+            ul{
+            flex-direction: row;
+            gap: 10px;
+            }
+        }
+    }
+}

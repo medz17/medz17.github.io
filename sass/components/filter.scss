@@ -41,3 +41,16 @@
         color: $primaire;
     }
 }
+
+
+@media all and (min-width: 960px) { 
+    .filter{
+        width: 25%;
+        i{
+            margin-left : 3.5%;
+        }
+        .filterContent{
+            margin-left: 15%;
+        }
+    }
+}
