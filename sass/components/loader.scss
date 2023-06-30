@@ -1,0 +1,55 @@
+@import '../utils/variables.scss';
+@import'../utils/animations.scss';
+
+.loaderContainer{
+    position: relative;
+    margin: 15px auto;
+    top: 100px;
+    width: 100px;
+    height: 100px;
+    #loader {
+        display: block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        margin: -150px 0 0 0px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: $primaire;
+        -webkit-animation: spin 4s linear;
+        animation: spin 4s linear;
+        animation-fill-mode: forwards;
+    }
+    #loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: $secondaire;
+        -webkit-animation: spin 5s linear;
+        animation: spin 5s linear;
+    }
+    #loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: $tertiaire;
+        -webkit-animation: spin 3.5s linear;
+        animation: spin 3.5s linear;
+    }
+    p{
+        font-weight: bold;
+        margin-top: -65px;
+        margin-left: 5px;
+        animation: hidden 3.5s forwards;
+    }
+}

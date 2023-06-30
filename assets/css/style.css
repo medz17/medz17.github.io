@@ -1,3 +1,65 @@
+@keyframes slideRight {
+  from {
+    transform: translateX(-700px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes validSlide {
+  from {
+    transform: translateX(70px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes hidden {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 body {
   margin: 0%;
   padding: 0%;
@@ -102,6 +164,68 @@ footer .link_footer a {
     gap: 10px;
   }
 }
+@keyframes slideRight {
+  from {
+    transform: translateX(-700px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes validSlide {
+  from {
+    transform: translateX(70px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes hidden {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .new_button_position {
   display: flex;
   flex-direction: row-reverse;
@@ -131,6 +255,7 @@ footer .link_footer a {
   min-width: 22%;
 }
 .card .cardContent {
+  transition: all 100ms;
   padding: 20px;
   display: flex;
   flex-direction: row;
@@ -174,6 +299,23 @@ footer .link_footer a {
   width: 25px;
 }
 
+.menu {
+  opacity: 0;
+  animation: slideRight 3s forwards;
+}
+
+.entrees {
+  animation-delay: 0s;
+}
+
+.plats {
+  animation-delay: 1s;
+}
+
+.desserts {
+  animation-delay: 2s;
+}
+
 .repas {
   cursor: pointer;
   border-radius: 20px;
@@ -213,16 +355,20 @@ footer .link_footer a {
   background-color: #99E2D0;
   color: #FFFFFF;
   width: 0px;
+  transition: transform 5000ms;
 }
 .repas:hover .typeRepas {
   width: 75%;
 }
 .repas:hover .valid {
+  animation: validSlide 75ms;
   width: 25%;
   display: flex;
 }
 .repas:hover .valid i {
   font-size: 25px;
+  transition: transform 400ms;
+  transform: rotate(360deg);
 }
 
 @media all and (min-width: 960px) {
@@ -303,6 +449,68 @@ img {
     margin-left: 15%;
   }
 }
+@keyframes slideRight {
+  from {
+    transform: translateX(-700px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes validSlide {
+  from {
+    transform: translateX(70px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes hidden {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 i.heart_hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   -webkit-background-clip: text;
@@ -370,6 +578,121 @@ i.footer_icon {
 .command_button:active {
   background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-700px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes validSlide {
+  from {
+    transform: translateX(70px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes hidden {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.loaderContainer {
+  position: relative;
+  margin: 15px auto;
+  top: 100px;
+  width: 100px;
+  height: 100px;
+}
+.loaderContainer #loader {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: -150px 0 0 0px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #9356DC;
+  -webkit-animation: spin 4s linear;
+  animation: spin 4s linear;
+  animation-fill-mode: forwards;
+}
+.loaderContainer #loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #FF79DA;
+  -webkit-animation: spin 5s linear;
+  animation: spin 5s linear;
+}
+.loaderContainer #loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #99E2D0;
+  -webkit-animation: spin 3.5s linear;
+  animation: spin 3.5s linear;
+}
+.loaderContainer p {
+  font-weight: bold;
+  margin-top: -65px;
+  margin-left: 5px;
+  animation: hidden 3.5s forwards;
 }
 
 .logo {
@@ -448,7 +771,7 @@ i.footer_icon {
 @media all and (min-width: 960px) {
   .fonctionnement {
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
   }
   .fonctionnement h2 {
     margin-left: 2.5%;
@@ -464,6 +787,68 @@ i.footer_icon {
   }
   .cards_container .card_container {
     width: 50%;
+  }
+}
+@keyframes slideRight {
+  from {
+    transform: translateX(-700px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes validSlide {
+  from {
+    transform: translateX(70px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes hidden {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 .title_restaurants {
@@ -624,7 +1009,6 @@ i.footer_icon {
   background-color: #F7F7F7;
   padding: 25px;
   padding-top: 0px;
-  width: 90%;
 }
 .menu h2 {
   font-weight: 300;

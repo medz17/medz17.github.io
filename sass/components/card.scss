@@ -1,3 +1,5 @@
+@import'../utils/animations.scss';
+
 // Page accueil 
 //// Card restaurants 
 
@@ -29,6 +31,7 @@
    
     
     .cardContent{
+        transition: all 100ms;
         padding: 20px;
         display: flex;
         flex-direction: row;
@@ -76,6 +79,19 @@
 // Page Restaurant
 ///// Card menu 
 
+.menu{ 
+    opacity: 0;
+    animation: slideRight 3s forwards; 
+}
+.entrees{
+    animation-delay: 0s;
+}
+.plats{
+    animation-delay: 1s;   
+}
+.desserts{
+    animation-delay: 2s;
+}
 .repas{
     cursor: pointer;
     border-radius: 20px;
@@ -115,16 +131,20 @@
         background-color: $tertiaire;
         color: $white;
         width: 0px;  
+        transition: transform 5000ms;   
     }
     &:hover{
         .typeRepas{
             width: 75%;
         }
         .valid{
+            animation: validSlide 75ms;
             width: 25%; 
             display: flex;
             i{
                 font-size: 25px;
+                transition : transform 400ms;
+                transform: rotate(360deg);
             }
         }
     }

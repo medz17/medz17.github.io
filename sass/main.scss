@@ -3,7 +3,8 @@
 // 1. Configuration and aninations
 @import
   'utils/variables',
-  'utils/mixins';
+  'utils/mixins',
+  'utils/animations.scss';
 
 // 2. Base 
   @import
@@ -22,7 +23,8 @@
 'components/img',
 'components/filter',
 'components/icon',
-'components/button.scss';
+'components/button.scss',
+'components/loader.scss';
 
 // 5. Page-specific styles
 @import

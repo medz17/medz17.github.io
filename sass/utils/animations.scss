@@ -1,0 +1,66 @@
+// Apparition des blocs de menu
+@keyframes slideRight{
+    from{
+        transform: translateX(-700px);
+        opacity : 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+// bouton validation sur card repas
+@keyframes validSlide{
+    from{
+        transform: translateX(70px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+    
+}
+//-----page accueil--------
+//loader
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+//disparition text loader
+@keyframes hidden{
+    from{
+        opacity : 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+//transition couleur coeur
+@keyframes opac{
+    from{opacity:0}
+    to{opacity:1}
+ }
